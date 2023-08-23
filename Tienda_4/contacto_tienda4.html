@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Store- contact us page</title>
+    <link rel="stylesheet" href="styles_tienda4.css">
+
+    <!-- link icons boxicons.com -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Fuente google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="" class="logo"> <i class='bx bx-headphone'></i>Sound Store</a>
+
+        <ul class="navbar">
+            <li> <a href="/Tienda_4/index_tienda4.html" >Overview</a></li>
+            <li><a href="/Tienda_4/info_tienda4.html"> Tech Specs</a></li>
+            <li><a href="/Tienda_4/contacto_tienda4.html"class="active">Contact Us</a></li>
+        </ul>
+        <div class="header-icons">
+            <i class='bx bxs-cart'></i>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+
+     <!----------------------------- Form Section ------------------------------>
+
+     <main>
+        <hr>
+            <div class="contact-col">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Enter your name
+                    " required>
+                    <input type="email" name="email" placeholder="Enter your Email
+                    " required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea  rows="8" name="message"  placeholder="Message" required></textarea>
+                    <button type="submit" class="btn site-btn2 px-4 py-3 mr-4 btn-light" id="boton">Send Message</button>
+    
+    
+                </form>
+    
+            </div>
+
+
+
+
+<!-- footer -->
+
+<div class="footer">
+    
+  
+        <div class="footer-col-2">
+            <a href="" class="logo-footer"> <i class='bx bx-headphone'></i>Sound Store</a>  
+
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - Sbarrachina Code <i class='bx bx-heart'></i></p>
+  
+    </div>
+  </div>
+
+<script>
+   
+
+    let menu = document.querySelector('#menu-icon')
+    let navbar = document.querySelector('.navbar')
+
+    menu.onclick = ( ) => {
+        menu.classList.toggle('bx-x')
+        navbar.classList.toggle('open')
+    }
+
+</script>
+
+</body>
+</html>
+
+    
