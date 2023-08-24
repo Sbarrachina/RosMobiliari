@@ -169,6 +169,218 @@ body {
 
 
 
+ /* Seccion card productos  */
+/* Estilos para la sección de tarjetas */
+#about {
+  background-color: #f7f7f7;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cambiamos a 4 columnas */
+  gap: 20px;
+  max-width: 1600px; /* Ajustamos el ancho máximo */
+  margin: 0 auto; /* Centramos el contenedor */
+  padding: 0 20px; /* Espaciado en los lados del contenedor */
+  margin-top: 2rem;
+}
+
+/* Estilos para las tarjetas (cards) */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%; /* Igualamos la altura de las tarjetas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
 
 
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e68100;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambiamos a 4 columnas */
+    gap: 20px;
+  }
+
+}
+
+/*  */
+
+/* Estilos para la galería de imágenes ampliada */
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  display: inline-block;
+  max-width: 23.33%; /* Divide el ancho en tres partes iguales */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+.close-gallery {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+/* Estilos para ocultar los botones que abren el modal en la versión responsiva */
+@media (max-width: 768px) {
+  .open-gallery {
+    display: none;
+  }
+}
+
+/* Estilos para ocultar el modal en la versión responsiva */
+@media (max-width: 768px) {
+  .gallery-modal {
+    display: none;
+  }
+}
+
+/*  pagina modal carrito */
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center; /* Centrar el contenido en el modal */
+}
+.checkout-content {
+  text-align: center;
+}
+.checkout-content h2,p{
+  text-align: center;
+}
+
+/* Estilos para el icono de cerrar (cruz) */
+.close {
+  font-size: 34px; /* Ajusta el tamaño según tus preferencias */
+  position: absolute;
+  top: 10px; /* Ajusta la posición vertical */
+  right: 10px; /* Ajusta la posición horizontal */
+  cursor: pointer;
+}
+
+
+/* Estilos para mostrar el modal */
+.modal-active {
+  display: block;
+}
+
+/* Estilos para los botones de pago */
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.payment-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.payment-btn i {
+  font-size: 20px;
+}
+
+.payment-btn.paypal-btn {
+  background-color: #0070ba;
+  color: #fff;
+}
+
+.payment-btn.paypal-btn:hover {
+  background-color: #ff9900;;
+}
+
+.payment-btn.credit-card-btn {
+  background-color:#0070ba;
+  color: #fff;
+}
+
+.payment-btn.credit-card-btn:hover {
+  background-color: #ff9900;
+  
+}
+
+/* Media query para la versión de escritorio */
+
+/* Media query para la versión de escritorio */
 
