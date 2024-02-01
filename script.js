@@ -4,8 +4,8 @@ $(document).ready(function(){
         autoplaySpeed: 3000, // Cambiar imágenes cada 3 segundos
         dots: true, // Muestra los puntos de navegación
         arrows: true, // Muestra las flechas de navegación
-        slidesToShow: 5, // Muestra 3 imágenes al mismo tiempo
-        slidesToScroll: 1, // Desplaza una imagen a la vez
+        slidesToShow: 3, // Muestra 3 imágenes al mismo tiempo
+        slidesToScroll: 3, // Desplaza una imagen a la vez
 
         responsive: [
             {
