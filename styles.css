@@ -160,7 +160,6 @@ body {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    background-color: #f7f7f7;
     width: 100%;
     position: absolute;
     top: 70px; /* Ajusta esto según el espacio que necesites */
@@ -168,12 +167,13 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px;
     display: none;
+    text-align: center;
   }
   .navbar a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .navbar.open {
-    top: 50px; /* Ajusta esto según el espacio que necesites */
+    top: 150px; /* Ajusta esto según el espacio que necesites */
    } 
 
    #menu-icon {
