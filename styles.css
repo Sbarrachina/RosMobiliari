@@ -258,7 +258,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #e68100;
+  background-color: #000;
 }
 
 @media (max-width: 768px) {
