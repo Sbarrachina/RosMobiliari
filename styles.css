@@ -53,6 +53,7 @@ body {
   text-decoration: none;
   transition: color 0.3s;
   font-size: 25px;
+
 }
 
 .navbar a:hover {
@@ -61,9 +62,6 @@ body {
 
 
 /*  version movil navbar  */
-
-
-
 
 
 
@@ -102,10 +100,15 @@ body {
 .section {
   padding: 3rem;
   text-align: center;
+  
 }
 
 .section h2 {
   margin-bottom: 1rem;
+  font-weight: initial;
+  font-size: 25px;
+
+  
 }
 
 .slider {
@@ -186,14 +189,18 @@ body {
   }
 
   
-
-
  /* Seccion card productos  */
 /* Estilos para la sección de tarjetas */
 #about {
   padding: 3rem 0;
   text-align: center;
   margin-top: 250px;
+    
+}
+
+#about h2 {
+  font-weight: initial;
+
 }
 
 .card-container {
@@ -216,6 +223,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .card img {
@@ -228,6 +236,8 @@ body {
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-weight: initial;
+  
 }
 
 .card p {
@@ -446,3 +456,5 @@ body {
 .carousel-item button:hover {
   background: rgba(220, 220, 220, 0.9); /* Cambia el color de fondo al pasar el mouse */
 }
+
+
