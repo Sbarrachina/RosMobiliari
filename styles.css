@@ -217,7 +217,7 @@ body {
 .card {
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(228, 16, 16, 0.1);
   text-align: center;
   height: 100%; /* Igualamos la altura de las tarjetas */
   display: flex;
@@ -249,7 +249,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #bd7c6a;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
