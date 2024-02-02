@@ -412,7 +412,14 @@ body {
   position: relative;
 }
 
-.carousel-item h1 {
+
+
+.carousel-item a {
+  color: #000; /* Cambiado a negro */
+  text-decoration: none;
+}
+
+.carousel-item button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -425,10 +432,17 @@ body {
   font-size: 1.5em; /* Tamaño de la letra ajustado */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
   text-transform: uppercase;
-  
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  outline: none; /* Elimina el contorno del botón al hacer clic */
 }
 
-.carousel-item a {
+.carousel-item button a {
   color: #000; /* Cambiado a negro */
   text-decoration: none;
+  display: block; /* Hace que el enlace ocupe todo el ancho del botón */
+}
+
+.carousel-item button:hover {
+  background: rgba(220, 220, 220, 0.9); /* Cambia el color de fondo al pasar el mouse */
 }
