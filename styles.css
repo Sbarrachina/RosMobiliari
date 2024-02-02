@@ -237,6 +237,7 @@ body {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: initial;
+  color: #5E4c3b;
   
 }
 
@@ -258,7 +259,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #000;
+  background-color: #5E4c3b;
 }
 
 @media (max-width: 768px) {
