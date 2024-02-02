@@ -408,3 +408,30 @@ body {
 
 /*  */
 
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000; /* Color negro */
+  background: rgba(240, 240, 240, 0.1); /* Fondo gris claro muy transparente */
+  padding: 15px; /* Espaciado interno para el texto */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto */
+  font-size: 1.5em; /* Tamaño de la letra ajustado */
+  display: none; /* Inicialmente oculto */
+  transition: background 0.3s ease; /* Agregar transición para suavizar el cambio de fondo */
+}
+
+.carousel-item:hover h1 {
+  background: rgba(240, 240, 240, 0.9); /* Fondo gris claro más visible al pasar el ratón */
+}
+
+.carousel-item a {
+  color: #000; /* Cambiado a negro */
+  text-decoration: none;
+}
